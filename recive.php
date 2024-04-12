@@ -7,7 +7,7 @@ $text_1_lenght = strlen($text_1);
 
 $text_2 = str_replace($word, ' *** ', $text_1);
 
-$text_22 = str_replace('***', '  ' ,$text_2);
+$text_22 = str_replace('***', ' ' ,$text_2);
 
 $text_2_lenght = strlen($text_22);
 
