@@ -15,3 +15,4 @@ php-badwords
 1. Creiamo la struttura, ovvero un file html con il form e un php dove andremmo poi a salvarci i risultati del form e andremo ad applicare la censura.
 2. Andiamo a collegare il form al file php tramite action, e gli diamo un method (per i form meglio usare POST).
 3. Andimao a stampare il testo nella paggian php.
+4. Con strlen prendiamo la lunghezza de ltesto e la stampiamo, con explode andiamo a dividere il testo parola per parola.
