@@ -10,14 +10,14 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <form action="recive.php" type="post">
+        <form action="recive.php" method="POST">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Parola da censusre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Parola da censusre">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Parola da censusre" name="word">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Frase/Paragrafo</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Frase/Paragrafo" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Frase/Paragrafo" rows="3" name="text"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Invia</button>
         </form>
