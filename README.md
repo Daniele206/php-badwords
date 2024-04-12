@@ -15,6 +15,8 @@ php-badwords
 1. Creiamo la struttura, ovvero un file html con il form e un php dove andremmo poi a salvarci i risultati del form e andremo ad applicare la censura.
 2. Andiamo a collegare il form al file php tramite action, e gli diamo un method (per i form meglio usare POST).
 3. Andimao a stampare il testo nella paggian php.
-4. Con strlen prendiamo la lunghezza de ltesto e la stampiamo, con str_replace andiamo a censurare la pola che vogliamo dal testo.
-5. Andiamo poi a creare un'altra stringa dove andiamo a rimuovere anche la censura e la sostituiamo ad uno spazzio vuoto cosí da poter calcolare la lunghezza della frase con la censura.
-6. Andiamo a creare una variabile che sottragga il numero di parole del testo censurato a quello del testo sensa censura, cosí da sapere quante sono le parole censurate. 
+4. Con explode ci salviamo in un altra variabile il testo sotto forma di array cosí da poter sapere quante parole ci sono con count.
+5. Con str_replace sostituiamo *** alla parola decisa in precedenza.
+6. Con un altro str_replace andiamo a rimuovere anche *** (ci servirá per contare quante sono le parole effettive rimaste).
+7. Con un altro explode ed un altro count andiamo a contare le parole rrimaste visibili dopo la censura.
+8. Creiamo una variabbile che sottragga il numero di parole rimaste a quello inizziale per ottenere il numero di parole censurate.
