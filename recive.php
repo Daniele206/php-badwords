@@ -5,9 +5,14 @@ $text_1 = $_POST['text'];
 
 $text_1_lenght = strlen($text_1);
 
-$text_1_explode = explode(' ', $text_1);
+$text_2 = str_replace($word, ' *** ', $text_1);
 
-var_dump($text_1_explode);
+$text_22 = str_replace('***', '  ' ,$text_2);
+
+$text_2_lenght = strlen($text_22);
+
+$n_censored_words = $text_1_lenght - $text_2_lenght;
+
 
 ?>
 
@@ -31,6 +36,8 @@ var_dump($text_1_explode);
       <h1 class="fw-bold text-success">IL testo con la censura é:</h1>
         <p><?php echo $text_2 ?></p>
         <span class="fs-2">Il testo é formato da <strong><?php echo $text_2_lenght ?></strong> parole</span>
+        <br>
+        <span class="fs-2">Ed ha <strong><?php echo $n_censored_words ?></strong> parole censurate</span>
       </div>
     </div>
   </div>
