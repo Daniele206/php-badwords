@@ -5,6 +5,10 @@ $text_1 = $_POST['text'];
 
 $text_1_lenght = strlen($text_1);
 
+$text_1_explode = explode(' ', $text_1);
+
+var_dump($text_1_explode);
+
 ?>
 
 <!DOCTYPE html>
