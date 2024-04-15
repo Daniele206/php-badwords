@@ -9,9 +9,15 @@ $text_1_lenght = count($text_1_explode);
 
 $text_2 = str_replace($word, '***', $text_1);
 
-$text_22 = trim(str_replace('***', '' ,$text_2));
+$text_22 = (str_replace('***', '' ,$text_2));
 
 $text_22_explode = explode(' ', $text_22);
+
+for($i = 0; $i<count($text_22_explode); $i++){
+  if($text_22_explode[$i] == ''){
+    array_splice($text_22_explode, $i, 1);
+  }
+}
 
 $text_2_lenght = count($text_22_explode);
 
